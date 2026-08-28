@@ -1,0 +1,13 @@
+{
+  "name": "verge-cli",
+  "image": "mcr.microsoft.com/devcontainers/go:1.26",
+  "postCreateCommand": "go version && go vet ./...",
+  "customizations": {
+    "vscode": {
+      "extensions": ["golang.go"],
+      "settings": {
+        "go.useLanguageServer": true
+      }
+    }
+  }
+}

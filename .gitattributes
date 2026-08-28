@@ -1,0 +1,16 @@
+# 仓库里一律存 LF，检出时也用 LF。
+* text=auto eol=lf
+
+# go.sh / build.sh 是在 Linux 容器里执行的：shebang 带上 CRLF 后 bash 会报
+# "/usr/bin/env: 'bash\r': No such file or directory"，在 Windows 上克隆就直接不能编译。
+*.sh text eol=lf
+
+# PowerShell 只在 Windows 上跑，按 Windows 习惯保留 CRLF。
+*.ps1 text eol=crlf
+
+# 注意：.gitattributes 只能控制属性，不能把文件挡在提交之外。
+# 「不提交」的文件要用 .gitignore 排除；这里只负责从发布归档里剔除开发专属文件
+# （git archive / 打包发布时生效，文件本身仍留在仓库里）。
+.devcontainer/ export-ignore
+.gitignore      export-ignore
+.gitattributes  export-ignore
