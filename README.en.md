@@ -2,7 +2,7 @@
 
 # verge-cli
 
-**A command-line client for the [Verge API](https://api.verge-ai.xyz) image endpoints**
+**A command-line client for the [Verge](https://verge-ai.xyz) image endpoints**
 
 English · [简体中文](./README.md)
 

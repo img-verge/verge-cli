@@ -2,7 +2,7 @@
 
 # verge-cli
 
-**[Verge API](https://api.verge-ai.xyz) 图像接口的命令行客户端**
+**[Verge](https://verge-ai.xyz) 图像接口的命令行客户端**
 
 [English](./README.en.md) · 简体中文
 
